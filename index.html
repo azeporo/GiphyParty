@@ -4,10 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Giphy Party!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body>
+<div class="container">
+  <h1 class="d-flex justify-content-center mb-3">Find a GIF</h1>
+  <form action="" class="row justify-content-center">
+    <div class="col-auto">
+      <input id="search-input" type="text" class="form-cotrol form-control-md" placeholder="Enter GIF category">
+    </div>
+    <div class="col-auto">
+     <button id="submit-btn" class="btn btn-sm btn-info">Submit</button>
+    </div>
+    <div class="col-auto">
+      <button id="delete-btn" class="btn btn-sm btn-danger">Delete All</button>
+    </div>
+  </form>
+  <div id="display-area" class="mt-5">
 
+  </div>
+  
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.js"></script>
 <script src="app.js"></script>
